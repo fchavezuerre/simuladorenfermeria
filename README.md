@@ -3,5 +3,5 @@ Nota:
 
 Esta herramienta es de carácter educativo/simulación. Las decisiones clínicas finales deben ser validadas siempre por un profesional colegiado.
 
-[![Streamlit App](https://streamlit.io)](TU_URL_DE_LA_APP_AQUI)
+[![Streamlit App](https://streamlit.io)](https://simuladorenfermeria-ciqp2ypy5nonpshr5fgtgz.streamlit.app/)
 
