@@ -81,17 +81,19 @@ if df_nanda is not None:
 
         # SECCIÓN NIC
         with col1:
-            st.subheader("2. Intervenciones (NIC)")
-            ids_nic = relaciones['ID_NIC'].unique()
-            opciones_nic = df_nic[df_nic['ID_NIC'].isin(ids_nic)]
-            nics_sel = st.multiselect("Seleccione las intervenciones sugeridas:", opciones_nic['Etiqueta'])
-
-        # SECCIÓN NOC
-        with col2:
-            st.subheader("3. Resultados (NOC)")
+            st.subheader("2. Resultados (NOC)")
             ids_noc = relaciones['ID_NOC'].unique()
             opciones_noc = df_noc[df_noc['ID_NOC'].isin(ids_noc)]
             nocs_sel = st.multiselect("Seleccione los resultados esperados:", opciones_noc['Etiqueta'])
+
+        # SECCIÓN NOC
+        with col2:
+            st.subheader("3. Intervenciones (NIC)")
+            ids_nic = relaciones['ID_NIC'].unique()
+            opciones_nic = df_nic[df_nic['ID_NIC'].isin(ids_nic)]
+            nics_sel = st.multiselect("Seleccione las intervenciones sugeridas:", opciones_nic['Etiqueta'])
+            
+            
 
         # EVALUACIÓN DE INDICADORES
         puntuaciones = {}
